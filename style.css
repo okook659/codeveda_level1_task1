@@ -1,0 +1,29 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    margin: 0.5em 0.25em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    cursor: pointer;
+}
