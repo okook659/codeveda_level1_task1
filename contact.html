@@ -8,18 +8,35 @@
 </head>
 <body>
     <nav class="navbar">
-        <span>Cups & Co</span>
-        <ul>
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+        <div class="navbar-container">
+            <span class="navbar-logo">Cups & Co</span>
+            <button class="navbar-toggle" id="navbarToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <script>
+        const toggleBtn = document.getElementById('navbarToggle');
+        const menu = document.getElementById('navbarMenu');
+        toggleBtn.addEventListener('click', (e) => {
+            menu.classList.toggle("active");
+            toggleBtn.classList.toggle("active");
+        });
+        
+    </script>
 </body>
 </html>
