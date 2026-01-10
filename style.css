@@ -6,9 +6,26 @@
 
 body {
     font-family: 'Lato', 'Arial', sans-serif;
-    background: url('assets/background.jpg') no-repeat center center/cover;
     min-height: 100vh;
+    text-align: center;
 }
+
+#home {
+    background: url('assets/background.jpg') no-repeat center center/cover;
+}
+
+#home-nav {
+    background: transparent;
+}
+
+#about {
+    background: url('assets/cup-lemon.jpg') no-repeat center center/cover;
+}
+
+#contact {
+    background: url('assets/cup-coffee.jpg') no-repeat center center/cover;
+}
+
 
 .navbar {
     display: flex;
@@ -18,7 +35,6 @@ body {
     position: sticky;
     top: 0;
     height: 80px;
-    background: transparent;
     backdrop-filter: blur(10px);
     z-index: 999;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -106,6 +122,7 @@ body {
         padding: 5rem 1.5rem;
         backdrop-filter: blur(10px);
         box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+        background-color: #ffffff7e;
     }
 
     .navbar-container .navbar-menu.active {
@@ -129,6 +146,21 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .commands {
+        flex-direction: column;
+    }
+
+    .about-content-description p{
+        font-size: 0.5rem;
+    }
+
+    .navbar-container .navbar-menu li a {
+        color: #000;
+    }
+
+    .contact-content-description p{
+        font-size: 1rem;
+    }
 }
 
 .hero {
@@ -164,4 +196,101 @@ h1 {
     border-radius: 20px;
     border: 2px solid transparent;
     transition: all 0.7s ease;
+}
+
+.about-content {
+    background-color: #ffffff7e;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in;
+}
+
+
+.about-content img {
+    width: 30%;
+}
+
+.about-content-description {
+    text-align: center;
+}
+
+.previous-commands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.commands {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.command {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #ffffff7e;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in;
+
+}
+.command-img {
+    min-width: 50%;
+    height: 50vh;
+}
+
+#cup-cat {
+    background: url('assets/cup-cat.jpg') no-repeat center center/cover;
+}
+
+#cup-kitty {
+    background: url('assets/cup-kitty.jpg') no-repeat center center/cover;
+}
+
+.command:hover {
+    transform: translateY(-10px);
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.contact-content-description {
+    border-radius: 20px;
+    background-color: #ffffff7e;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in;
+    width: 60%;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.contact-content-description:hover {
+    transform: translateY(-11px);
 }

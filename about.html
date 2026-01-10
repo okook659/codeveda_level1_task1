@@ -6,8 +6,8 @@
     <title>About</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar">
+<body id="about">
+    <nav class="navbar" id="about-nav">
         <div class="navbar-container">
             <span class="navbar-logo">Cups & Co</span>
             <button class="navbar-toggle" id="navbarToggle">
@@ -28,6 +28,35 @@
             </ul>
         </div>
     </nav>
+    <div class="about-content">
+        <img src="assets/background.jpg" alt="" />
+        <div class="about-content-description">
+          <h2>About us</h2>
+          <br>
+        <p>Since 1995 we've been taking care of your hot tea. <br> Simple, friendly, warm cups for family, friends <br> and even lover</p>
+        <br>
+        <button id="commandButton" class="command-button">
+            <a href="contact.html">Command now</a>
+        </button>
+      </div>
+    </div>
+    <div class="previous-commands">
+        <h2>Here are our previous commands</h2>
+        <div class="commands">
+            <div class="command">
+            <div class="command-img" id="cup-kitty">
+
+            </div>
+            <p>Enjoy your hot cholocate with a realistic cat-looking-like cup. Feels cozy right? <br> This was made for Ari who loves her cat so much she came up with this idea</p>
+        </div>
+        <div class="command">
+             <div class="command-img" id="cup-cat">
+
+            </div>
+            <p>Enjoy your hot cholocate with a realistic cat-looking-like cup. Feels cozy right? <br> This was made for Ari who loves her cat so much she came up with this idea</p>
+        </div>
+        </div>
+    </div>
 
     <script>
         const toggleBtn = document.getElementById('navbarToggle');
